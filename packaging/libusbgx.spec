@@ -66,6 +66,7 @@ make
 %{_includedir}/usbg/function/serial.h
 %{_includedir}/usbg/function/hid.h
 %{_includedir}/usbg/function/uac2.h
+%{_includedir}/usbg/function/accessory.h
 %{_libdir}/pkgconfig/libusbgx.pc
 %{_libdir}/libusbgx.so
 
