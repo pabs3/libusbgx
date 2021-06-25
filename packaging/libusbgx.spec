@@ -84,5 +84,6 @@ make
 %{_bindir}/gadget-uac2
 %{_bindir}/show-udcs
 %{_bindir}/gadget-rndis-os-desc
+%{_bindir}/gadget-accessory
 
 %changelog

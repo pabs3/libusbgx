@@ -220,6 +220,7 @@ typedef enum
 	USBG_F_HID,
 	USBG_F_UAC2,
 	USBG_F_UVC,
+	USBG_F_ACCESSORY,
 	USBG_FUNCTION_TYPE_MAX,
 } usbg_function_type;
 
@@ -1247,7 +1248,7 @@ extern int usbg_import_function(usbg_gadget *g, FILE *stream,
  * @return 0 on success, usbg_error otherwise
  */
 extern int usbg_import_config(usbg_gadget *g, FILE *stream, int id,
-				usbg_config **c);
+			      usbg_config **c);
 
 /**
  * @brief Imports usb gadget from file
@@ -1258,8 +1259,8 @@ extern int usbg_import_config(usbg_gadget *g, FILE *stream, int id,
  * if NULL this param will be ignored.
  * @return 0 on success, usbg_error otherwise
  */
-extern int usbg_import_gadget(usbg_state *s, FILE *stream,
-			      const char *name, usbg_gadget **g);
+extern int usbg_import_gadget(usbg_state *s, FILE *stream, const char *name,
+			      usbg_gadget **g);
 
 /**
  * @brief Get text of error which occurred during last function import
