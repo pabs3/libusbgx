@@ -1,4 +1,3 @@
-include $(top_srcdir)/aminclude.am
 SUBDIRS = src
 
 if BUILD_EXAMPLES
